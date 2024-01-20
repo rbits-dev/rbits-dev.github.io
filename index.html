@@ -773,7 +773,7 @@
              }
         }
      
-        @media (min-aspect-ratio: 1/1) {
+        @media (min-aspect-ratio: 1/1) and ( min-width: 1000px) {
             .content-wrap {
                 display: flex;
                 justify-content: center;
@@ -813,7 +813,7 @@
         }
 
         
-        @media (max-width: 768px) {
+        @media (max-width: 1040px) {
 
             :root {
                  --lineheight: 1.25;
@@ -970,6 +970,7 @@
             .rbitsicon {
                 margin-top:-1vh;
                 padding-left:16px;
+                height:4vh;
             }
 
             .crab-wrapper {
@@ -986,6 +987,14 @@
 
             .nft-image {
                 width:25vw;
+            }
+
+            .fix1 {
+                padding-left:0px;
+            }
+
+            .fix2 {
+                padding-right:0px;
             }
         }
 
@@ -1547,7 +1556,7 @@ The heart of Rabbit Island lies in its thriving community, where players can col
 
                 <div class="borderbox">
                     <span class="spantitle">
-                        <img src="uniswap.webp" alt="Uniswap Logo" class="icon">
+                        <div class="coin"></div>    
                         HOWTO BUY ON UNISWAP
                     </span>
                     <div class="bat-wrapper">
