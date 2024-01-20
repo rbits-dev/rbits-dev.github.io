@@ -140,6 +140,7 @@
 
         img {
             max-width: 100%;
+            width:100%;
             height: auto;
             display: block;
             margin: 0 auto; 
@@ -315,7 +316,7 @@
             border-top: 2px solid #ffffff;
             border-bottom: 2px solid #ffffff;
             padding-left: 4vw;
-            padding-right: 4vw;
+            padding-right: 1vw;
             margin-top:1vmax;
             margin-bottom:1vmax;
             padding-top:16px;
@@ -471,7 +472,7 @@
             position: relative;
             display: flex;
             align-items: flex-end;
-            bottom: 0;
+            bottom: -25px;
             animation: walking 4.5s linear infinite;
             overflow:hidden;
             margin-top:-48px;
@@ -504,7 +505,7 @@
 
         .carrot {
             display: inline-block;
-            width: calc(384px/6);
+            width: 64px;
             height: 64px;
             background: url("carrot.webp") no-repeat;
             animation: rotatecarrot 1.0s steps(6) infinite;
@@ -515,7 +516,7 @@
             width: 84px;
             height: 147px;
             background: url("raiders/assets/ships/02_Blue_idle.webp") no-repeat;
-            margin-bottom:-64px; 
+            margin-bottom:-86px; 
         }
 
         .rocketburning {
@@ -525,6 +526,8 @@
             background: url("rocket.webp") no-repeat;
             animation: rocket 0.5s steps(10) infinite;
             margin-bottom:-64px;
+            margin-top:-147px;
+            margin-left:85%;
         }
 
         .rocket-disappear {
@@ -575,7 +578,7 @@
             position: relative;
             display: flex;
             align-items: flex-end;
-            bottom: 0;
+            bottom: -25px;
             animation: walking 20s linear infinite;
             overflow:hidden;
         }
@@ -659,6 +662,7 @@
             flex-direction: column;
             align-items: center;
             height: auto;
+            padding:2vmax;
         }
 
         .nft-row {
@@ -693,7 +697,9 @@
         .rbitsicon {
             height:5vh;
             margin-right: 10vw; 
-            margin-top:-5vh;
+            margin-top:-84px;
+            margin-left:90%;
+            width:64px;
         }
 
         @keyframes blink {
@@ -702,8 +708,8 @@
         }
 
         @keyframes walking {
-            from { transform: translate(50vw, 0%); }
-            to { transform: translate(0vw, 0%); }
+            from { transform: translate(60vw, 0%); }
+            to { transform: translate(-10vw, 0%); }
         }
 
         @keyframes saw-motion {
@@ -829,8 +835,18 @@
                 overflow: hidden;
             }
 
+            .hbutton-container {
+                margin:4px auto;
+            }
+
+            .spanlaunch {
+                font-size:1.6vmax;
+            }
+
             .hbutton {
-                font-size:1.25vmax;
+                font-size:1.44vmax;
+                margin-right:4px;
+                letter-spacing: 0px;
             }
 
             .character1 {
@@ -843,11 +859,12 @@
             li {
                 padding:0em;
                 font-size:1vmax;
-                margin-top:-48px;
+                margin-top:-50px;
+                padding-left:8px;
             }
 
             li span {
-                font-size:2vmax;
+                font-size:3vmax;
             }
 
             .coin {
@@ -903,6 +920,9 @@
             .carrot {
                 transform:scale(0.5);
                 display:flex;
+                min-width: 64px;
+                margin-top: -20px;
+                display: flex;
             }
 
             .bird-wrapper {
@@ -926,8 +946,7 @@
             }
 
             .firewalker-wrapper {
-                bottom:-16px;
-                margin-top:-96px;
+                bottom:-24px;
             }
         
             .rocket-disappear {
@@ -968,15 +987,15 @@
             }
 
             .rbitsicon {
-                margin-top:-1vh;
+                margin-top:-4px;
                 padding-left:16px;
-                height:4vh;
+                height:32px;
+                width:32px;
             }
 
             .crab-wrapper {
                 transform: scale(0.5);
-                margin-top:-64px;
-                bottom:-16px;
+                bottom:-48px;
                 
             }
 
@@ -996,6 +1015,13 @@
             .fix2 {
                 padding-right:0px;
             }
+        }
+
+        @media (orientation: portrait ) {
+            @keyframes walking {
+            from { transform: translate(100vw, 0%); }
+            to { transform: translate(-30vw, 0%); }
+        }
         }
 
     </style>
@@ -1126,15 +1152,15 @@
                     </span>
                 </div>
 
+                <div class="zep-wrapper">
+                    <div class="zep"></div>
+                </div>
                 <div class="borderbox" style="padding-bottom:-4px;" id="tokenomics">
                     <span class="spantitle">
                         <div class="coin"></div>
                         <span>TOKENOMICS</span>
                         <div><img src="rbitslogo.webp" class="rbitsicon"></div>
                     </span>
-                    <div class="zep-wrapper" style="margin-top:-50px;">
-                        <div class="zep"></div>
-                    </div>
                 </div>
 
                 <div class="textbox">
@@ -1207,15 +1233,15 @@
 
                 </div>
 
+                <div class="bird-wrapper">
+                    <div class="bird"></div>
+                </div>
                 <div class="bear"></div>
                 <div class="borderbox" id="roadmap">
                     <span class="spantitle">
                         <div class="carrot"></div>
                         ROADMAP
                     </span>
-                    <div class="bird-wrapper">
-                        <div class="bird"></div>
-                    </div>
                 </div>
 
                 <div class="textbox">
@@ -1428,14 +1454,14 @@ The heart of Rabbit Island lies in its thriving community, where players can col
                     </span>
                 </div>
 
+                <div class="firewalker-wrapper">
+                    <div class="firewalker"></div>
+                </div>
                 <div class="borderbox-anim" id="nft">
                     <span class="spantitle">
                         <div class="carrot"></div>    
                         OUR NFT COLLECTIONS
                     </span>
-                    <div class="firewalker-wrapper">
-                        <div class="firewalker"></div>
-                    </div>
                 </div>
 
                 <div class="nft-container">
@@ -1482,14 +1508,15 @@ The heart of Rabbit Island lies in its thriving community, where players can col
                     </span>
                 </div>
 
-                <div class="borderbox" style="padding-bottom:0px;" id="team">
+                <div class="crab-wrapper">
+                    <div class="crab"></div>
+                </div>
+                <div class="borderbox" id="team">
                     <span class="spantitle">
-                        <div class="rocketburning"></div>
-                        MEET OUR TEAM
+                        <div class="carrot"></div>
+                        <span>MEET OUR TEAM</span>
                     </span>
-                    <div class="crab-wrapper">
-                        <div class="crab"></div>
-                    </div>
+                    <div class="rocketburning"></div>
                 </div>
                 <div class="textbox">
                     <span class="spanh2">
@@ -1530,7 +1557,7 @@ The heart of Rabbit Island lies in its thriving community, where players can col
                 <div class="borderbox" id="buy">
                     <span class="spantitle">
                         <div class="coin"></div>
-                        MARKET BUY
+                        <span>MARKET BUY</span>
                     </span>
                 </div>
                 <div class="textbox" id="nomarketbuy" style="display:block">
