@@ -1219,18 +1219,32 @@
 
                 <div class="textbox">
                     <span class="spanh2">
+                        Launch Mechanics:
+                    </span>
+                    <span class="spantext">
+                        &#128279;&nbsp;Deploy contract & add liquidity<br/>
+                        &#128274;&nbsp;Lock initial liquidity<br/>
+                        &#9878;&nbsp;25% Angel Tax (first 4-12 hours)<br/>
+                        &#9965;&nbsp;Tax applies on buy,sell and transfer<br/>
+                        &#9965;&nbsp;No wallet limits<br/>
+                        &#9965;&nbsp;No contract renouncement<br/>
+                    </span>
+                </div>
+
+                <div class="textbox">
+                    <span class="spanh2">
                         Token Mechanics:
                     </span>
                     <span class="spantext">
-                        &#9878;&nbsp;25% Angel Tax (first 4-12 hours)<br/>
-                        &#9878;&nbsp;5% buy/sell tax (post launch)<br/>
+                        &#9878;&nbsp;5% buy/sell tax<br/>
                         &#9965;&nbsp;No wallet limits<br/>
                         &#9965;&nbsp;No transfer delays<br/>
                         &#9965;&nbsp;No transfer limits<br/>
+                        &#9965;&nbsp;No transfer tax<br/>
                         &#9965;&nbsp;No blacklist<br/>
+                        &#9965;&nbsp;Can exempt special addresses from fees<br/>                       
                         &#9965;&nbsp;Fees cannot be set higher than 5%<br/>
                     </span>
-
                 </div>
 
                 <div class="bird-wrapper">
@@ -1434,8 +1448,7 @@
                     </span>
                     <span class="spantext">
                         Venture into the enchanting world of Rabbit Island, a multiplayer game that brings the joy of cultivation and community-building to a whole new level. As a rabbit, you are the proud owner of a piece of land where you can cultivate a variety of crops like carrots and turnips. Create and customize your own perfect haven, interact with fellow rabbit enthusiasts, and partake in the vibrant Rabbit Economy.
-
-The heart of Rabbit Island lies in its thriving community, where players can collaborate, trade resources, and even establish a bustling marketplace. Take on a profession within the game, whether it's farming, crafting, or trading, and contribute to the dynamic virtual ecosystem. The Rabbit Island experience is not just about personal growth; it's about building connections and working together to make the island flourish.
+                        The heart of Rabbit Island lies in its thriving community, where players can collaborate, trade resources, and even establish a bustling marketplace. Take on a profession within the game, whether it's farming, crafting, or trading, and contribute to the dynamic virtual ecosystem. The Rabbit Island experience is not just about personal growth; it's about building connections and working together to make the island flourish.
                     </span>
                     <div class="border">
                         <img src="rabbitisland.webp">
@@ -1852,7 +1865,6 @@ The heart of Rabbit Island lies in its thriving community, where players can col
                     'explorer': EXPLORER_ADDR + ERC20_ADDRESS + "#code"
                 };
                 updateNotConnected(data);
-                //console.log(e);
             }
         }
 
@@ -1987,7 +1999,6 @@ The heart of Rabbit Island lies in its thriving community, where players can col
                     from: userAddress,
                     value: web3.utils.toWei(amount, 'ether')
                 });
-               
                 
                 setTimeout(function () {
                     rocket.classList.add('rocket-disappear');
