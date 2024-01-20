@@ -56,7 +56,7 @@
         const EXPLORER_TX = 'https://bscscan.com/tx/';
         const EXPLORER_ADDR = 'https://bscscan.com/address/';
 
-        const launchdate = new Date(Date.UTC(2024, 0, 27, 20, 0, 0));
+        const launchdate = new Date(Date.UTC(2024, 1, 1, 20, 0, 0));
         const hasLaunched = false;
 
         const HTTP_PROVIDER = 'https://bsc-dataseed1.binance.org:443';
@@ -567,6 +567,7 @@
             background-image: url("cutebear.webp");
             animation: blink 3s steps(2) infinite;
             margin-left:40vmax;
+            margin-bottom:-1vmax;
         }
 
         .crab-wrapper {
@@ -688,6 +689,12 @@
             color:#ffffff;
         }
 
+        .rbitsicon {
+            height:5vh;
+            margin-right: 10vw; 
+            margin-top:-5vh;
+        }
+
         @keyframes blink {
             from { background-position:    0   0; }
             to   { background-position: -120px 0; }
@@ -801,10 +808,17 @@
             .roadmap-img-cont-small img {
                 max-width:300px;
             }
+
         }
 
         
         @media (max-width: 768px) {
+
+            :root {
+                 --lineheight: 1.25;
+                --letterspacing: 2px;
+            }
+
             .content-wrap {
                 margin: 0 0w;
             }
@@ -812,7 +826,156 @@
             .bg {
                 width: 100%;
                 overflow: hidden;
-            } 
+            }
+
+            .hbutton {
+                font-size:1.25vmax;
+            }
+
+            .character1 {
+                transform:scale(0.5);
+            }
+            .character2 {
+                transform:scale(0.5);
+            }
+
+            li {
+                padding:0em;
+                font-size:1vmax;
+                margin-top:-48px;
+            }
+
+            li span {
+                font-size:2vmax;
+            }
+
+            .coin {
+                transform:scale(0.5);
+                min-width:64px;
+                margin-top:-20px;
+                display:flex;
+            }
+
+            .rabbitwalking-wrapper {
+                margin: 0 0px;
+                padding: 0 0px;
+                transform:scale(0.5);
+                bottom:-22px;
+            }
+
+            .rabbitwalking {
+                transform:scale(0.5);
+            }
+
+            .borderbox-anim {
+                padding-top:16px;
+                margin-top:32x;
+            }
+
+            .borderbox {
+                padding-top:16px;
+                margin-top:32px;
+                padding-bottom:0px;
+            }
+
+            .spantitle {
+                display:flex;
+            }
+
+            .zep {
+                transform:scale(0.5);
+            }
+
+            .zep-wrapper {
+                transform:scale(0.5);
+            }
+
+            .bear {
+                transform:scale(0.5);
+                margin-bottom:-5.2vmax;
+            }
+
+            .bird {
+                transform:scale(0.5);
+            }
+
+            .carrot {
+                transform:scale(0.5);
+                display:flex;
+            }
+
+            .bird-wrapper {
+                margin:0 0px;
+                padding: 0 0px;
+                transform:scale(0.5);
+                margin-top:-40px;
+            }
+
+            .roadmap-img-cont-small {
+                max-width:150px;
+            }
+
+            .roadmap-img-cont-small img {
+                max-width:150px;
+            }
+
+            .firewalker {
+                transform:scale(0.5);
+                margin-top:32px;
+            }
+
+            .firewalker-wrapper {
+                bottom:-16px;
+            }
+        
+            .rocket-disappear {
+                transform:scale(0.5);
+            }
+
+            .rocketburning {
+                transform:scale(0.5);
+            }
+
+            .rocketidle {
+                transform:scale(0.5);
+                margin-bottom:-100px;
+            }
+
+            .image-container img {
+                width:30vw;
+            }
+
+            .spantitle .icon {
+                padding-right:16px;
+                padding-bottom:16px;
+                width:32px;
+                max-width:32px;
+            }
+
+            .flower, .boss, .crab, .saw, .bat {
+                transform:scale(0.5);
+            }
+
+            .footer a {
+                font-size:2vmax;
+            }
+
+            .rbitsicon {
+                margin-top:-1vh;
+                padding-left:16px;
+            }
+
+            .crab-wrapper {
+                transform: scale(0.5);
+                margin-top:-32px;
+                bottom:-16px;
+                
+            }
+
+            .saw-wrapper {
+                transform:scale(0.5);
+                bottom:-8px;
+            }
         }
 
     </style>
@@ -882,10 +1045,10 @@
                     <span class="spantitle">
                         <div class="coin" style="animation: rotate 0.55s steps(5) infinite;"></div>
                         <span>ABOUT RBITS</span>
-                        <div class="rabbitwalking-wrapper" style="margin-top:-72px;">
-                            <div class="rabbitwalking"></div>
-                        </div>
                     </span>
+                    <div class="rabbitwalking-wrapper" style="margin-top:-72px;">
+                        <div class="rabbitwalking"></div>
+                    </div>
                 </div>
 
                 <div class="textbox">
@@ -947,11 +1110,11 @@
                     <span class="spantitle">
                         <div class="coin"></div>
                         <span>TOKENOMICS</span>
-                        <div><img src="rbitslogo.webp" style="height:5vh; margin-right: 10vw; margin-top:-5vh;"></div>
-                        <div class="zep-wrapper" style="margin-top:-50px;">
-                            <div class="zep"></div>
-                        </div>
+                        <div><img src="rbitslogo.webp" class="rbitsicon"></div>
                     </span>
+                    <div class="zep-wrapper" style="margin-top:-50px;">
+                        <div class="zep"></div>
+                    </div>
                 </div>
 
                 <div class="textbox">
@@ -1024,15 +1187,15 @@
 
                 </div>
 
-                <div class="bear" style="margin-bottom:-1vmax;"></div>
+                <div class="bear"></div>
                 <div class="borderbox" id="roadmap">
                     <span class="spantitle">
                         <div class="carrot"></div>
                         ROADMAP
-                        <div class="bird-wrapper">
-                            <div class="bird"></div>
-                        </div>
                     </span>
+                    <div class="bird-wrapper">
+                        <div class="bird"></div>
+                    </div>
                 </div>
 
                 <div class="textbox">
@@ -1303,10 +1466,10 @@ The heart of Rabbit Island lies in its thriving community, where players can col
                     <span class="spantitle">
                         <div class="rocketburning"></div>
                         MEET OUR TEAM
-                        <div class="crab-wrapper">
-                            <div class="crab"></div>
-                        </div>
                     </span>
+                    <div class="crab-wrapper">
+                        <div class="crab"></div>
+                    </div>
                 </div>
                 <div class="textbox">
                     <span class="spanh2">
@@ -1375,10 +1538,10 @@ The heart of Rabbit Island lies in its thriving community, where players can col
                     <span class="spantitle">
                         <img src="uniswap.webp" alt="Uniswap Logo" class="icon">
                         HOWTO BUY ON UNISWAP
-                        <div class="bat-wrapper">
-                            <div class="bat"></div>
-                        </div>
                     </span>
+                    <div class="bat-wrapper">
+                        <div class="bat"></div>
+                    </div>
                 </div>
 
                 <div class="textbox">
