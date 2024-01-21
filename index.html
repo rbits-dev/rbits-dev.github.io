@@ -120,6 +120,16 @@
             src: url('somybmp01_7.ttf') format('truetype');
         }
 
+        @font-face {
+            font-family: 'Mont';
+            src: url('Montserrat-Regular.ttf') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'MontS';
+            src: url('Montserrat-SemiBold.ttf') format('truetype');
+        }
+
         body, html {
             margin: 0;
             padding: 0;
@@ -150,7 +160,7 @@
             font-style: italic;
             font-weight: bold;
             font-size: 1.25vmax;
-            font-family: Somy;
+            font-family: MontS;
             color:#ffffff;
             line-height:var(--lineheight);
             letter-spacing:var(--letterspacing);
@@ -160,7 +170,7 @@
             font-style: italic;
             font-weight: bold;
             font-size: 2.25vmax;
-            font-family: Somy;
+            font-family: MontS;
             color:#ffffff;
             line-height:var(--lineheight);
             letter-spacing:var(--letterspacing);
@@ -181,7 +191,7 @@
             font-style: italic;
             font-weight: bold;
             font-size: 1.25vmax;
-            font-family: Somy;
+            font-family: MontS;
             color:#ffffff;
             line-height:var(--lineheight);
             letter-spacing:var(--letterspacing);
@@ -192,7 +202,7 @@
             font-variant: normal;
             font-weight: 100;
             font-size: 1.15vmax;
-            font-family: Somy;
+            font-family: Mont;
             color:#ffffff;
             text-align: left;
             line-height:var(--lineheight);
@@ -203,7 +213,7 @@
             font-variant: normal;
             font-weight: 100;
             font-size: 0.75vmax;
-            font-family: Somy;
+            font-family: Mont;
             color:#ffffff;
             text-align: left;
             line-height:var(--lineheight);
@@ -214,7 +224,7 @@
             font-variant: normal;
             font-weight: 100;
             font-size: 1.15vmax;
-            font-family: Somy;
+            font-family: MontS;
             color:#ffffff;
             text-align: left;
             letter-spacing:var(--letterspacing);
@@ -224,7 +234,7 @@
             font-variant: italic;
             font-weight: 300;
             font-size: 1.15vmax;
-            font-family: Somy;
+            font-family: MontS;
             color:#ffffff;
             text-align: left;
             display: block;
@@ -280,7 +290,7 @@
             transition: background-color 0.3s ease-in-out;
             margin-bottom: 1vw;
             margin-top: 1vw;
-            font-family: Somy;
+            font-family: MontS;
         }
 
         .hbutton-container {
@@ -304,7 +314,7 @@
             font-size: 1.0vw;
             transition: background-color 0.3s ease-in-out;
             margin-right: 1vw;
-            font-family: Somy;
+            font-family: Mont;
         }
 
         .button:hover, .hbutton:hover {
@@ -327,7 +337,7 @@
             font-style: italic;
             font-weight: bold;
             font-size: 1.25vmax;
-            font-family: Somy;
+            font-family: MontS;
             color: #ffffff;
             line-height: var(--lineheight);
             letter-spacing: var(--letterspacing);
@@ -418,7 +428,7 @@
             list-style-type: none;
             font-size: 1.25em;
             padding: 1em;
-            font-family: Somy;
+            font-family: MontS;
             color:#ffffff;
             margin-top:-32px;
         }
@@ -426,7 +436,7 @@
         li span {
             display: block;
             font-size: 3.5rem;
-            font-family: Somy;
+            font-family: MontS;
             color:#ffffff;
         }
 
@@ -690,7 +700,7 @@
             margin-top: 5px;
             font-weight: bold;
             font-size: 1.25vmax;
-            font-family: Somy;
+            font-family: Mont;
             color:#ffffff;
         }
 
@@ -1922,7 +1932,7 @@
             const table = tokenomicsDataElement.querySelector('table');
             table.style.width = '95%';
             table.style.borderSpacing = '0';
-            table.style.fontFamily = 'Somy';
+            table.style.fontFamily = 'Mont';
             table.style.border = '2px solid white';
             table.style.borderRadius = '5px';
             table.style.margin = 'auto';
