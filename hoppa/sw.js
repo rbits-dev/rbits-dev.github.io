@@ -198,7 +198,7 @@ var filesToCache = [
 '/hoppa/assets/minira8bits.webp',
 '/hoppa/assets/monster.json',
 '/hoppa/assets/monster.webp',
-'/hoppa/assets/moonshot.webp',
+'/hoppa/assets/rbits.webp',
 '/hoppa/assets/nothrow.m4a',
 '/hoppa/assets/nothrow.mp3',
 '/hoppa/assets/objects.json',
