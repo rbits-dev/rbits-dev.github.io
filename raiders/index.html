@@ -1688,6 +1688,7 @@ function Bomb(options, tar, origin) {
 
   let ms = 200 - (standingStillTimer > 200 ? 200 : 200 / standingStillTimer);
   this.smartBomb = (options.smartBomb ? true : randomBetween( 0, 100) < (smartBombProbability + (ms * 0.25)) ? true: false);
+  //console.log("ms = " + ms + " smartBomb = " + this.smartBomb + " prob = " + smartBombProbability);
   if(this.smartBomb) {
     if(!tar.active || !playing)
       this.smartBomb = false;
@@ -2695,7 +2696,6 @@ function levelUp() {
    // enemies will shoot more often (faster)
    for(let e of enemies) {
     e.rocketCoolDown -= 10;
-
    }
    // and they will get smarter by 1%
    smartBombProbability ++; 
@@ -2716,7 +2716,7 @@ function levelUp() {
 
    speedMultiplier = 4;
    enemySeedFrameInterval = 10;
-
+  
    backgrounds[0].speed_y *= 2;
    backgrounds[1].speed_y *= 2;
    
